@@ -1,0 +1,287 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/*boton style*/
+.boton {
+  border: 1px solid #0c0910;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0c0910;
+}
+
+@media (min-width: 800px) {
+  .boton {
+    margin-left: 1vw;
+  }
+}
+/*article*/
+article {
+  margin: 7vw;
+}
+
+.article_title {
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 1vw;
+  font-family: "Old Standard TT", serif;
+}
+
+.aticle_paragraph {
+  font-size: 4.3vw;
+  margin-bottom: 7vw;
+  color: #a6a5a8;
+  line-height: 6vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.article_span {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  article {
+    margin: 2vw;
+  }
+
+  .article_title {
+    font-size: 4vw;
+  }
+
+  .aticle_paragraph {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
+    line-height: 2vw;
+  }
+}
+.nav_logo {
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  z-index: 1;
+  background-color: #0a0a0a;
+  position: absolute;
+  color: #ECECEC;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav_header {
+  margin: 0;
+  background: white;
+  min-height: 60px;
+}
+
+.sub-nav-toggle span:after {
+  content: "☰";
+  min-width: 40px;
+  position: absolute;
+  right: 0%;
+}
+
+#sub-nav:checked ~ #sub-navigation {
+  display: block;
+}
+
+.sub-nav-links {
+  display: none;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.sub-nav-links .nav-item1 {
+  width: 46%;
+  text-align: right;
+  text-decoration: none;
+  color: #0c0910;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub-nav-links .nav-item2 {
+  width: 25%;
+  text-decoration: none;
+  color: #0c0910;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub-nav-links .nav-item3 {
+  width: 15%;
+  text-decoration: none;
+  color: #0c0910;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub-nav-links .nav-item4 {
+  width: 14%;
+  text-decoration: none;
+  color: #0c0910;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#sub-navigation {
+  display: none;
+  clear: both;
+  padding-top: 25px;
+}
+
+.nav-item {
+  background: white;
+  display: block;
+  width: 100%;
+  text-align: justify;
+  text-decoration-line: none;
+  color: #0c0910;
+  line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .sub-nav-toggle span:after {
+    display: none;
+  }
+
+  .sub-nav-links {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  #sub-navigation {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .nav-item1 {
+    width: 70%;
+  }
+
+  .nav-item2,
+.nav-item3,
+.nav-item4 {
+    width: 10%;
+  }
+}
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.header_picture {
+  background-image: url(../img/imagen1.png);
+  background-size: cover;
+  width: 100%;
+  height: 58vw;
+}
+
+@media (min-width: 600px) {
+  .header_picture {
+    background-position-y: 33%;
+    width: 100%;
+    height: 40vw;
+  }
+}
+@media (min-width: 800px) {
+  .header_picture {
+    width: 55%;
+    height: 50vw;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .container-inner {
+    width: 45%;
+    -webkit-order: 1;
+    order: 1;
+  }
+}
+/*footer*/
+footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: #0c0910;
+  color: #ECECEC;
+  padding: 2rem;
+}
+
+.suscribirse {
+  box-sizing: border-box;
+  writing-mode: vertical-rl;
+  text-align: center;
+  font-size: 5vw;
+  padding-right: 3%;
+  margin: 0rem;
+  width: 10%;
+  font-family: "Old Standard TT", serif;
+}
+
+.form-control {
+  width: 90%;
+  height: 5vw;
+}
+
+.footer_title {
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+  font-size: 8vw;
+  font-family: "Old Standard TT", serif;
+}
+
+.footer_mail {
+  font-size: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  font-family: "Raleway", sans-serif;
+}
+
+:placeholder-shown {
+  font-size: 3vw;
+}
+
+@media (min-width: 600px) {
+  placeholder-shown {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 800px) {
+  .footer {
+    padding: 3.8vw;
+  }
+
+  .suscribirse {
+    font-size: 3vw;
+  }
+
+  .footer_title {
+    font-size: 3vw;
+  }
+
+  .footer_mail {
+    font-size: 2vw;
+  }
+
+  :placeholder-shown {
+    font-size: 2vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

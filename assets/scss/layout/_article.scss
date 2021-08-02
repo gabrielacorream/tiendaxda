@@ -1,0 +1,42 @@
+/*article*/
+article {
+    margin: 7vw;
+}
+
+.article_title {
+    font-size: 8vw;
+    font-weight: bold;
+    margin: 1vw;
+    font-family: $old;
+}
+
+.aticle_paragraph {
+    font-size: 4.3vw;
+    margin-bottom: 7vw;
+    color:$quicksilver;
+    line-height: 6vw;
+    font-family: $raleway;
+}
+
+.article_span {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    article {
+        margin: 2vw;    
+    }
+
+    .article_title {
+        font-size: 4vw;
+        
+    }
+
+    .aticle_paragraph {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        margin-left: 1vw;
+        line-height: 2vw;
+    }
+}
+
